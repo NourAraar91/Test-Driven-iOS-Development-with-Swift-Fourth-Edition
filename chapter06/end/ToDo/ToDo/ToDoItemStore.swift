@@ -13,12 +13,12 @@ class ToDoItemStore {
       itemPublisher.send(items)
     }
   }
-  private let fileName: String
-
-  init(fileName: String = "todoitems") {
-    self.fileName = fileName
-    loadItems()
-  }
+    var storage: LocalStorage
+    
+    init(storage: LocalStorage) {
+        self.storage = storage
+        loadItems()
+    }
 
   func add(_ item: ToDoItem) {
     items.append(item)
@@ -34,28 +34,11 @@ class ToDoItemStore {
     }
   }
 
-  private func saveItems() {
-    let url = FileManager.default
-      .documentsURL(name: fileName)
-
-    do {
-      let data = try JSONEncoder().encode(items)
-      try data.write(to: url)
-    } catch {
-      print("error: \(error)")
+    private func saveItems() {
+        storage.save(items: items)
     }
-  }
 
-  private func loadItems() {
-    let url = FileManager.default
-      .documentsURL(name: fileName)
-
-    do {
-      let data = try Data(contentsOf: url)
-      items = try JSONDecoder()
-        .decode([ToDoItem].self, from: data)
-    } catch {
-      print("error: \(error)")
+    private func loadItems() {
+        items = storage.load()
     }
-  }
 }

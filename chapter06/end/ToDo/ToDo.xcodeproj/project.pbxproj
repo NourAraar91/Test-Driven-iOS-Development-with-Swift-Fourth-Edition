@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27252587274FD948009517E1 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27252586274FD948009517E1 /* LocalStorage.swift */; };
 		F20D252327045FA500546FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D252227045FA500546FC9 /* AppDelegate.swift */; };
 		F20D252527045FA500546FC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D252427045FA500546FC9 /* SceneDelegate.swift */; };
 		F20D252727045FA500546FC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D252627045FA500546FC9 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27252586274FD948009517E1 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		F20D251F27045FA500546FC9 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20D252227045FA500546FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F20D252427045FA500546FC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				F216CED32725495F007C7E93 /* Coordinate.swift */,
 				F217CE5C27103157008B066C /* ToDoItemStore.swift */,
 				F274B98D27367E09003648FF /* FileManagerExtension.swift */,
+				27252586274FD948009517E1 /* LocalStorage.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27252587274FD948009517E1 /* LocalStorage.swift in Sources */,
 				F216CED42725495F007C7E93 /* Coordinate.swift in Sources */,
 				F20D252727045FA500546FC9 /* ViewController.swift in Sources */,
 				F20D252327045FA500546FC9 /* AppDelegate.swift in Sources */,
@@ -467,7 +471,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				DEVELOPMENT_TEAM = E5963CA2JF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -523,7 +527,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				DEVELOPMENT_TEAM = E5963CA2JF;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -548,7 +552,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				DEVELOPMENT_TEAM = E5963CA2JF;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -572,7 +576,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				DEVELOPMENT_TEAM = E5963CA2JF;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,7 +599,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				DEVELOPMENT_TEAM = E5963CA2JF;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
